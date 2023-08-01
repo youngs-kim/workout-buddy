@@ -13,7 +13,6 @@ const signupUser = async (req, res) => {
     const user = await User.signup(email, password);
     //create a token
     const token = createToken(user._id);
-    // console.log(token, 'token');
     console.log(user, 'user');
     res.status(200).json({ email, token });
   } catch (error) {

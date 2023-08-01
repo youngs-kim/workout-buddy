@@ -10,7 +10,6 @@ const app = express();
 app.use(express.json());
 
 app.use((req, res, next) => {
-  // console.log(req.body);
   next();
 });
 
@@ -29,8 +28,3 @@ mongoose
   .catch((error) => {
     console.log(error);
   });
-
-//listen for request
-// app.listen(process.env.PORT, () => {
-//   console.log('listening on port', process.env.PORT);
-// });

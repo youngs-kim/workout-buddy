@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import useWorkoutsContext from '../hooks/useWorkoutsContext';
 
-//REVIEW TUTORIAl 9
-
 //components
 import WorkoutDetails from '../components/WorkoutDetails';
 import WorkoutForm from '../components/WorkoutForm';
